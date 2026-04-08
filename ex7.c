@@ -1,3 +1,26 @@
+/*
+Write a menu driven program to implement a queue using linked list
+and perform qinsert (), q delete (), q display ()
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+// Node structure
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+// Queue structure
+struct Queue {
+    struct Node* front;
+    struct Node* rear;
+};
+
+// Function to initialize queue
+void initQueue(struct Queue* q) {
+    q->front = q->rear = NULL;
+}
 
 // Function to initialize queue
 void initQueue(struct Queue* q) {
